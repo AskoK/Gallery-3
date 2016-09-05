@@ -25,7 +25,7 @@ $(document).ready(function(){
         $(".list li").each(function(){
  
             // If the list item does not contain the text phrase fade it out
-            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+            if ($(this).text().search(new RegExp(filter)) < 0) {
                 $(this).fadeOut();
  
             // Show the list item if the phrase matches
